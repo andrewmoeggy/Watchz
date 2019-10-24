@@ -1,3 +1,92 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
+  --primary-color: #333;
+  --secondary-color: #444;
+  --overlay-color: rgba(0,0,0,.7);
   font-family: 'Catamaran', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 62.5%;
+  color: var(--primary-color);
+}
+
+h1,h2,h3,h4 {
+  line-height: 1.3;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 rem;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  padding-top: .3rem;
+  padding-bottom: 0.3rem;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .logo {
+  font-size: 2rem;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+.navbar .nav a {
+  padding: 0 1rem;
+}
+.navbar .nav a:hover {
+  color: #777;
+}
+
+.section-main {
+  margin: 3rem 0;
+}
+
+.section-main .container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 3rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.section-main h1 {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+
+.section-main p {
+  margin: 1rem 0;
 }
