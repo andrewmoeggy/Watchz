@@ -133,9 +133,46 @@ img {
 }
 .section-overlay__inner h2 {
   font-size: 5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
+
 /* //////////////////////////////////// */
+/* GALLERY  */
+/* //////////////////////////////////// */
+.section-gallery {
+
+}
+.big {
+  width: 100%;
+  height: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.gal-img-1 {
+
+}
+.gal-img-2 {
+
+}
+.gal-img-3 {
+  grid-row: 1 /2;
+}
+.gal-img-4 {
+
+}
+.gal-img-5 {
+
+}
+.gal-img-6 {
+
+}
+/* //////////// {
+
+}//////////////////////// */
 /* UTILITIES */
 /* //////////////////////////////////// */
 .btn {
