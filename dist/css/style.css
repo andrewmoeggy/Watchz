@@ -86,6 +86,7 @@ img {
   grid-template-columns: repeat(2,1fr);
   grid-gap: 3rem;
   align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
 }
 
@@ -227,6 +228,48 @@ img {
   color: #3b5998;
 }
 /* //////////////////////////////////// */
+/* Email Form */
+/* //////////////////////////////////// */
+
+.email-form {
+  width: 100%;
+  display: inline-block;
+  background-color: #555;
+  position: relative;
+  border-radius: 2rem;
+  line-height: 0;
+  margin-top: 1rem;
+}
+
+.email-form .form-control {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: #ddd;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+  padding: 0 3rem 0 1.5rem;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 2rem;
+}
+
+.submit {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0 2.5rem 2.5rem 0;
+  background-color: #ddd;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+} 
+/* //////////////////////////////////// */
 /* UTILITIES */
 /* //////////////////////////////////// */
 .btn {
@@ -244,4 +287,80 @@ img {
 
 .btn:hover {
   background: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .section-main {
+    margin: 4rem 0;
+  }
+  .section-main .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-watch {
+    background-image: contain;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 20vw);
+    grid-gap: .5rem;
+    padding: .5rem;
+  }
+
+  .gal-img-1 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .gal-img-2 {
+    grid-column: auto;
+  }
+  .gal-img-3 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .gal-img-4 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  
+  .gal-img-6 {
+    grid-column: auto;
+  }
+  .gal-img-7 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .gal-img-8 {
+    grid-column: auto;
+    grid-row: auto;
+    background: rgba(119, 119, 119, 0.265);
+  }
+
+  .section-footer {
+    padding: 3rem;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .section-main .container {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-gap: 1rem;
+  }
+  .blog-posts, .company-info {
+    display: none;
+  }
 }
