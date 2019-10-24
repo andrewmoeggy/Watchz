@@ -140,9 +140,7 @@ img {
 /* //////////////////////////////////// */
 /* GALLERY  */
 /* //////////////////////////////////// */
-.section-gallery {
 
-}
 
 .gallery {
   display: grid;
@@ -172,9 +170,7 @@ img {
   grid-row: 2 / -1;
   grid-column: 7 / -1;
 }
-.gal-img-5 {
 
-}
 .gal-img-6 {
   grid-column: 4 / 5;
 }
@@ -187,9 +183,50 @@ img {
   grid-row: 1 / 2;
   background: rgba(119, 119, 119, 0.265);
 }
-/* //////////// {
+/* //////////////////////////////////// */
+/* FORM  */
+/* //////////////////////////////////// */
 
-}//////////////////////// */
+.section-footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 4rem 0;
+  font-size: 1.2rem;
+}
+
+.section-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.section-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-footer h3 {
+  margin-bottom: 0.7rem;
+}
+
+.section-footer a{
+  line-height: 1.9;
+  color: #ccc;
+}
+
+.section-footer a > i {
+  margin-right: 0.5rem;
+}
+.fa-twitter{
+  color: #38a1f3;
+}
+.fa-instagram{
+  color:  #F56040;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+/* //////////////////////////////////// */
 /* UTILITIES */
 /* //////////////////////////////////// */
 .btn {
