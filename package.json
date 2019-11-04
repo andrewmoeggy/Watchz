@@ -1,0 +1,23 @@
+{
+  "name": "watchz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmoeggy/Watchz.git"
+  },
+  "author": "Andrew Moeggenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewmoeggy/Watchz/issues"
+  },
+  "homepage": "https://andrewmoeggy.github.io/Watchz",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
