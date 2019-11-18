@@ -32,7 +32,7 @@ ul {
   list-style: none;
 }
 
-img {
+.gallery figure img {
   width: 100%;
   height: 100%;
 }
