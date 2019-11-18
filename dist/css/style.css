@@ -305,7 +305,6 @@ img {
     padding: 2rem;
   }
   .hero-watch {
-    background-image: cover;
   }
   
   .gallery {
@@ -369,7 +368,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .section-main .container img {
-    height: auto;
+    width: 85vw;
   }
   .overlay {
     padding: 1rem;
